@@ -9,7 +9,9 @@ RUN yum install -y \
 RUN rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-5.noarch.rpm
 RUN yum install -y puppet-server-2.7.26
 WORKDIR /etc/puppet
+EXPOSE  443/tcp
 EXPOSE  8140/tcp
+EXPOSE  61613/tcp
 VOLUME  /etc/puppet
 VOLUME  /var/lib/puppet
 CMD puppet master --no-daemonize
