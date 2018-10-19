@@ -20,5 +20,3 @@ VOLUME  /etc/puppet
 VOLUME  /etc/puppet-environments
 VOLUME  /var/lib/puppet
 CMD puppet master --no-daemonize
-# docker build  --rm -t puppet-centos5 .
-# docker run -i -t -d -p 8140:8140/tcp -v puppet-var:/var/lib/puppet -v puppet-etc:/etc/puppet --name puppet-centos5 puppet-centos5
