@@ -11,7 +11,7 @@ docker run -i -t -d \
   -p 8140:8140/tcp \
   -v puppet-var:/var/lib/puppet \
   -v puppet-etc:/etc/puppet \
-    -v puppet-environments:/etc/puppet-environments \
+  -v puppet-environments:/etc/puppet-environments \
   --name puppet-centos5 \
   puppet-centos5
 ```
